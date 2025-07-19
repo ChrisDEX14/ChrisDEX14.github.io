@@ -70,7 +70,7 @@ header a:hover{
     height: 90vh;
     color:white;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)) 
-    ,url("Media/aula_blur.jpg");
+    ,url("Media/aula.jpg");
     background-position: center center;
     background-size: center;
     
