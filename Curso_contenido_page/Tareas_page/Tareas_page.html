@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tareas</title>
+    <link rel="stylesheet" href="style_tareas_page.css">
+    <script src="validar_envio.js""></script>
+</head>
+<body>
+
+    <!--en este Wrapper esta almacenado todo el contenido de la pagina, este tiene las configuraciones
+    necesarias para matener un orden en la pagina-->
+
+    <div class="wrapper">
+
+    <!-- El asside me almacena todo lo que es el listado de navegacion izquierdo, aqui estaria el logo de la
+    pagina, la imagen y nombre del del usuario y las opciones de navegacion de "catalogo de cursos" y
+    "mis cursos"-->
+
+    <aside>
+
+        <header>
+            <div class="logo">
+                <img src="../../Media/LOGO EDUCONNECT.svg" alt="Logo EduConnect">
+            </div>
+        </header>
+
+        <nav id="categorias_asside">
+            <img class="avatar" src="../../Media/avatar.png">
+            <p class="user_name_perfil">USUARIO</p>
+
+            <ul class="menu">
+                <a class="boton_categoria "href="../../Mis_Cursos_page/mis_cursos_page.html">Mis Cursos</a>
+                <a class="boton_categoria" href="../../Catalogo_page/catalogo_page.html">Catalogo de Cursos</a>
+            </ul>
+        </nav>
+
+    </aside>
+
+
+
+    <!--En este main esta almacenado un pequeno navegador donde puedes navegar entre el contenido del curso
+    las tareas y la calificaciones. En este HTML se puede entrar al apartado de Tareas, este tiene dos secciones
+    una donde estara asignada la tarea del curso donde contendra un documento de descarga de la tarea
+    y la otra seccion tendra la opcion de entregar la tarea ya hecha enviando el archivo correspondiente y
+    teniendo una alerta de "envio exitoso" al presionar el boton-->
+
+    <main>
+
+        <nav>
+
+            <section class="recuadro_categoria">
+                <ul class="categoria_mi_curso">
+                    <a class="botones_de_categorias_cursos" href="../contenido_page.html">Contenido</a>
+                    <a class="botones_de_categorias_cursos" href="Tareas_page.html">Tareas</a>
+                    <a class="botones_de_categorias_cursos" href="../CALIFICATION_page/calification_page.html">Calificaciones</a>
+                </ul>
+            </section>
+
+            <h2 class="titulo_principal">Tareas</h2>
+
+            <section class="menu_Tareas">
+
+                <h3 class="titulo_tareas">Tareas Asiganadas</h3>
+
+                <div class="casilla_descripcion">
+                    <p id="description">Aqui esta subida la tarea y/o proyecto asignado al curso, usted debera
+                    entregarlo el dia correspondiente, este proyecto pondra  a prueba sus capacidades y aptitudes
+                    que debio aprender con el contenido ofrecido en el curso. El archivo de la entrega debera
+                    ser enviado mediante la casilla de entrega para posteiormente ser evaluado. Buena suerte!</p>
+
+                <div id="link_tareas">
+                    <a href="#">[Tarea_Curso#1]</a>
+                </div>
+
+                </div>
+            </section>
+
+                
+                <form class="cargar_archivo">
+                    <h2>Subir archivo</h2>
+
+                    <input id="Arch" type="file" placeholder="Montar Documento" required>
+
+                    <button id="Boton_enviar"type="submit" onclick="tareaEnviar()">Enviar</button>
+                </form>
+                
+            
+
+        </nav>
+    </main>
+
+    </div>
+
+</body>
+</html>

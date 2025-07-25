@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calificaciones</title>
+    <link rel="stylesheet" href="style_calification_page.css">
+    <script src=""></script>
+</head>
+<body>
+
+    <!--en este Wrapper esta almacenado todo el contenido de la pagina, este tiene las configuraciones
+    necesarias para matener un orden en la pagina-->
+
+    <div class="wrapper">
+    
+    <!-- El asside me almacena todo lo que es el listado de navegacion izquierdo, aqui estaria el logo de la
+    pagina, la imagen y nombre del del usuario y las opciones de navegacion de "catalogo de cursos" y
+    "mis cursos"-->
+
+    <aside>
+
+        <header>
+            <div class="logo">
+                <img src="../../Media/LOGO EDUCONNECT.svg" alt="Logo EduConnect">
+            </div>
+        </header>
+
+        <nav id="categorias_asside">
+            <img class="avatar" src="../../Media/avatar.png">
+            <p class="user_name_perfil">USUARIO</p>
+
+            <ul class="menu">
+                <a class="boton_categoria "href="../../Mis_Cursos_page/mis_cursos_page.html">Mis Cursos</a>
+                <a class="boton_categoria" href="../../Catalogo_page/catalogo_page.html">Catalogo de Cursos</a>
+            </ul>
+        </nav>
+
+    </aside>
+
+
+
+<!--En este main esta almacenado un pequeno navegador donde puedes navegar entre el contenido del curso
+    las tareas y la calificaciones. En este HTML se puede entrar al apartado de "Calificaciones", este esta
+    dividido en dos secciones, una donde se mostraria la tarea en proceso de revision y ademas la calificacion
+    de la misma; la otra seccion tendria el apartado del comentario donde motraria una pequena retro alimentacion
+    que mandaria el profesor quien asigno la tarea-->
+    
+    <main>
+
+        
+
+        <nav>
+            <section class="recuadro_categoria">
+                <ul class="categoria_mi_curso">
+                    <a class="botones_de_categorias_cursos" href="../contenido_page.html">Contenido</a>
+                    <a class="botones_de_categorias_cursos" href="../Tareas_page/Tareas_page.html">Tareas</a>
+                    <a class="botones_de_categorias_cursos" href="calification_page.html">Calificaciones</a>
+                </ul>
+            </section>
+            
+            <h2 class="titulo_principal">Calificaciones</h2>
+        </nav>
+        
+        <Section class="Recuadro_calificaciones">
+
+            <div id="columb1">
+                <h2>Tarea</h2>
+                <div id="style_boton">
+                    <p><img src="../../Media/doc_icon.png">en revision...</p>
+                </div>
+            </div>
+
+            <div id="columb1">
+                <h2>Calificación</h2>
+                
+                <div id="style_boton">
+                    <p>0/20</p>
+                </div>
+            </div>    
+
+        </Section>
+
+        <Section class="Recuadro_Retro_alimentacion">
+            <h2>Comentarios</h2>
+        </Section>
+
+    </main>
+
+    </div>
+
+</body>
+</html>
